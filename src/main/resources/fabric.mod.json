@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "secondy_client",
+  "version": "${version}",
+  "name": "_2ndy Client",
+  "description": "_2ndy Client: modules, HUD and a menu on Right Shift.",
+  "authors": ["_2ndy"],
+  "license": "MIT",
+  "environment": "client",
+  "mixins": ["secondy_client_core.mixins.json"],
+  "entrypoints": {
+    "client": ["com.secondy.client.SecondyClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

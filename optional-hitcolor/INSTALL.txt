@@ -1,0 +1,9 @@
+Hit Color (hit tint that is visible through armor) is installed separately because it uses
+Minecraft's render internals, whose class names I cannot check ahead of time.
+
+1. Make sure the main build (gradle build / GitHub Actions) passes first.
+2. Copy the contents of optional-hitcolor/src/ into the project's src/ (keep the paths).
+3. In module/ModuleManager.java add the line:   ALL.add(new HitColorModule());
+4. In src/main/resources/fabric.mod.json the "mixins" line already exists (Freelook). Replace it with:
+       "mixins": ["secondy_client_core.mixins.json", "secondy_client.mixins.json"],
+5. Build again. If the build fails, send me the log and I will fix only this module.

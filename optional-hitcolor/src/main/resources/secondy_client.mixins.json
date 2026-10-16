@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.secondy.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "EquipmentRendererMixin",
+    "OverlayTextureAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}
